@@ -9,7 +9,7 @@ typedef pair<int, int> pi;
 #define F first
 #define S second
 #define pb push_back
-#define ep emplace_back
+#define eb emplace_back
 #define mp make_pair
 
 #define rep(i,a,b) for (int i = a; i < b; i++)
