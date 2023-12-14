@@ -1,0 +1,5 @@
+vi prefix(n);
+prefix[0] = v[0];
+rep(i,1,n){
+	prefix[i] = prefix[i-1] + v[i];
+}
