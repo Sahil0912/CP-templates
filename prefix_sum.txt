@@ -1,5 +1,5 @@
 vector<ll> prefix(n);
 prefix[0] = v[0];
-rep(i,1,n){
+for(int i = 1; i < n; i++){
 	prefix[i] = prefix[i-1] + v[i];
 }

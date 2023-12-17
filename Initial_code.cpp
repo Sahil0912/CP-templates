@@ -1,36 +1,30 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef vector<int> vi;
-typedef pair<int, int> pi;
-
+#define endl '\n'
 #define ll long long
-#define mod 1000000007
-#define F first
-#define S second
+typedef pair<int, int> pii;
+typedef vector<int> vi;
+typedef vector<ll> vll;
+typedef pair<ll, ll> pll;
 #define pb push_back
 #define eb emplace_back
 #define mp make_pair
+const ll mod = 1e9 + 7;
 
-#define rep(i,a,b) for (int i = a; i < b; i++)
-
-void solve() {
-
-}
+ll gcd(ll a, ll b) {if (b == 0) return a; return gcd(b, a % b);}
 
 int main()
 {
+	ios::sync_with_stdio(false); cin.tie(NULL);
 #ifndef ONLINE_JUDGE
 	freopen("input.txt", "r", stdin);
 	freopen("output.txt", "w", stdout);
 #endif
-	ios::sync_with_stdio(false);
-	cin.tie(NULL);
 
-	int tt;
-	cin >> tt;
+	int tt; cin >> tt;
 	while (tt--) {
-		solve();
+
 	}
 	return 0;
 }
