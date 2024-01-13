@@ -1,0 +1,12 @@
+int power(int n, int x,int p = mod) {
+	int res;
+	if (x == 0) return 1;
+	if (x % 2) {
+		res = power(n, (x - 1) / 2);
+		return (res * res * n)%p;
+	}
+	else {
+		res = power(n, (x / 2));
+		return (res * res)%p;
+	}
+}

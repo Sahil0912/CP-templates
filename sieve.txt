@@ -1,0 +1,17 @@
+vector<bool> nums(N+1);
+vector<int> smallest_factor(N+1);
+vector<int> primes;
+void sieve(){
+	nums[0] = true;
+	nums[1] = true;
+	for(int i = 2; i <= N; i++){
+		if(nums[i] == false){
+			primes.push_back(i);
+			smallest_factor[i] = i;
+			for(int j = i*i; j <= N; j+=i){
+				nums[j] = true;
+				smallest_factor[j] = i;
+			}
+		}
+	}
+}
